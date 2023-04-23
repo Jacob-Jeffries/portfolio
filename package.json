@@ -4,7 +4,12 @@
   "description": "Personal Portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm start\"",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server nodemon server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "client": "cd client && npm start"
   },
   "repository": {
     "type": "git",
@@ -15,6 +20,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Jacob-Jeffries/portfolio/issues"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
   },
   "homepage": "https://github.com/Jacob-Jeffries/portfolio#readme"
 }
