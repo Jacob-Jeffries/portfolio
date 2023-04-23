@@ -1,0 +1,399 @@
+:root{
+	--green: rgb(0, 255, 64);
+	--aside-border: rgb(0, 255, 64) 2px solid;
+	--middle-border: rebeccapurple 2px solid;
+	--inside-border: yellow 2px solid;
+}
+
+/* As I've edited this file it has started to contain a lot of JUNK - maybe one day i'll clean it*/
+
+/*Interesting, the mini project from the end of the CSS module designates a narrow-up design. Starting the most narrow view for portrait phones, then moving up for larger screen sizes. That means that I am coding the default style of the page for screens < 768px*/
+
+* {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*The idea of having another white website makes my head hurt!*/
+html{
+	background-color: black;
+}
+
+/*Think of this as the page wrapper - I guess this is an older way of thinking!*/
+body { 
+	background-color: #000011;
+	color: white;
+	font-size: 16px;
+}
+
+/*Separate heading tag styles for the ones I've used*/
+h1{
+	font-size: 175%;
+	font-weight: bold;
+	display: block;
+	margin: 20px;
+}
+
+h2{
+	font-size: 150%;
+	font-weight: bold;
+	margin: 20px;
+	font-family: Courier, monospace;
+}
+
+h3 {
+	font-size: 125%;
+	font-weight: bold;
+	margin: 10px;
+	font-family: Courier, monospace;
+}
+
+b{
+	color: rebeccapurple;
+	/* For everyone taken too soon */
+}
+
+/*General text and link styling for the page*/
+p{
+	margin: 10px;
+}
+
+a{
+	color: var(--green);
+}
+
+a:hover{
+	color: yellow;
+}
+
+a:visited{
+	color:rebeccapurple;
+}
+
+.nav-link {
+  margin-right: 1rem; /* Add a 1rem margin to the right of each link */
+}
+
+/* .navbar-toggler {
+	background-color: aqua;
+} */
+
+.navbar-toggler-icon {
+  background-image: url("../images/favicon.ico");
+}
+
+/* The code below outlines the main <figure> tag and its elements */
+figure{
+	display:block;
+	height: 200px;
+	margin-bottom: 25px;
+	background-image: url("../images/ti-994a.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 20px;
+}
+
+figcaption{
+	display: none;
+}
+/*END of <figure> tag style
+
+
+/*The following code outlines the <main> tag and its elements*/
+main{
+	display: flex;
+}
+
+#main-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 10px;
+	background-color: black;
+}
+
+.card{
+	flex-direction: column;
+	margin: 10px 0px;
+}
+
+.mc-aside {
+	min-width: 300px;
+	border-bottom: var(--aside-border);
+	border-left: var(--aside-border);
+	border-radius: 25px;
+	padding: 3px;
+}
+
+/*The .middle and .inside classes gave me the ability to make a nice triple border*/
+.middle{
+	display: flex;
+	justify-content: flex-end;
+	border-top: var(--middle-border);
+	border-right: var(--middle-border);
+	border-radius: 25px;
+	padding: 3px;
+	min-height: 100%;
+	min-width: 100%;
+
+}
+
+.inside{
+	display: flex;
+	justify-content: center;
+	border-bottom: var(--inside-border);
+	border-left: var(--inside-border);
+	border-radius: 25px;
+	min-height: 100%;
+	min-width: 100%;
+	background-color: aqua;
+	color: black;
+}
+
+/*The .text class holds the content of each major section*/
+.text {
+	padding: 5px;
+	line-height: 1.5;
+	word-spacing: 0.2em;
+	background-color: black;
+}
+
+/*This is the About Me section*/
+#mc00{
+	display: flex;
+	background-color: black;
+}
+
+/*This is the Portfolio aside section*/
+#mc01{
+	display: flex;
+	background-color: black;
+}
+
+/*This is the Portfolio main content*/
+#Portfolio_Carousel{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 25px;
+	margin-top: 25px;
+}
+
+#carouselExampleIndicators{
+	height: 350px;
+	width: 300x;
+	margin: auto;
+}
+
+.carousel-item > img{
+	max-height: 300px;
+	min-height: 290px;
+	max-width: 300px;
+	min-width: 290px;
+	object-fit: contain;
+	object-position: center;
+	margin: auto;
+}
+
+/*These are the titles for each of the Portfolio elements*/
+.title{
+	background-color: #000011;
+	/* align-self: flex-end; */
+	border: var(--green) 1px solid;
+	padding: 5px;
+	border-radius: 2px;
+	width: fit-content;
+	font-size: 75%;
+}
+
+
+/*This is the Education section*/
+#mc02{
+	display: flex;
+	background-color: black;
+}
+
+#mc02 li{
+	margin-bottom: 20px;
+	list-style: inside;
+	list-style-type: none;
+}
+
+/*This is the Contact Me section*/
+#mc03{
+	display: flex;
+	justify-content: center;
+	background-color: black;
+}
+
+#mc03 fieldset{
+	border: none;
+}
+/*END of <main> tag style*/
+
+/*The following code outlines the <footer> tag and its elements*/
+footer{
+	display: flex;
+	border: black 1px solid;
+	border-radius: 20px;
+	background-color: aqua;
+	color:black;
+}
+
+/*Code snippet taken from: https://www.w3docs.com/snippets/css/how-to-create-a-blinking-effect-with-css3-animations.html*/
+
+/*This gave me the results I was after but I do not exactly understand how yet*/
+.blink{
+	animation: blink-animation 0.75s steps(5, start) infinite;
+	-webkit-animation: blink-animation 0.75s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+	to {
+	  visibility: hidden;
+	}
+  }
+  @-webkit-keyframes blink-animation {
+	to {
+	  visibility: hidden;
+	}
+}
+/*END of <footer> tag style*/
+
+/*The following code modifies the style to facilitate larger screens, such as landscape phones and tablets*/
+
+@media screen and (min-width: 768px){
+	body{
+		margin: 0 25px;
+	}
+
+	/*The portfolio elements are switched from a colum orientation to a wrapped row orientation*/ 
+	#carouselExampleIndicators{
+		display: flex;
+		height: 400px;
+		width: 400px;
+		padding: 10px;
+	}
+	
+	.carousel-item > img{
+		height: 400px;
+		width: 400px;
+		object-fit: scale-down;
+		object-position: center;
+	}
+
+	/*When the screen allows, I;ve given the footer a margin*/
+	footer{
+		margin: 25px;
+	}
+}
+
+/*The following styles will take affect at larger screen sizes*/
+@media screen and (min-width: 992px) {
+	#top{
+		display: flex;
+		justify-content: start;
+		padding: 10px;
+	}
+	
+	/*With a larger screen I've increased the size of my main figure*/
+	figure{
+		display:block;
+		height: 400px;
+		margin-bottom: 25px;
+		background-image: url("../images/ti-994a.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: 20px;
+	}
+	
+	/*Once the screen is large enough the section header elements move to the left side*/
+	.card{
+		flex-direction: row;
+		margin-right: 50px;
+	}
+	
+	/*I've switched the direction of the borders in the larger screen size*/
+	.mc-aside {
+		border:none;
+		border-top: var(--aside-border);
+		border-right: var(--aside-border);
+		border-radius: 25px;
+		padding: 3px;
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	.middle{
+		display: flex;
+		justify-content: flex-end;
+		border:none;		
+		border-top: var(--middle-border);
+		border-right: var(--middle-border);
+		border-radius: 25px;
+		padding: 3px;
+		min-height: 100%;
+		min-width: 100%;
+	
+	}
+	.inside{
+		display: flex;
+		border: none;
+		border-top: var(--inside-border);
+		border-right: var(--inside-border);
+		border-radius: 25px;
+		min-height: 100%;
+		min-width: 100%;
+	}
+	.text{
+		margin:0 25px;
+		width: 100%;
+		border: var(--green) 1px solid;
+		border-radius: 25px;
+		transition: all 0.5s ease-in-out;
+	}
+	.text:hover{
+		border-radius: 25px;
+		box-shadow: inset 0px 0px 8px yellow, 0px 0px 10px rebeccapurple;
+	}
+
+	#carouselExampleIndicators{
+		display: flex;
+		height: 500px;
+		width: 500px;
+		padding: 10px;
+	}
+	
+	.carousel-item > img{
+		height: 500px;
+		width: 500px;
+		object-fit: scale-down;
+		object-position: center;
+	}
+}
+
+@media screen and (min-width: 1124px) {
+	
+	/*The nav links are switched from block to inline and centered*/
+	nav{
+		justify-content: center;
+	}
+	.navigation li{
+		display: inline;
+		margin: 0px 5px ;
+		margin-right: 10px;
+	}
+	#carouselExampleIndicators{
+		display: flex;
+		height: 800px;
+		width: 800px;
+		padding: 10px;
+	}
+	
+	.carousel-item > img{
+		height: 800px;
+		width: 800px;
+		object-fit: scale-down;
+		object-position: center;
+	}
+	
+}
