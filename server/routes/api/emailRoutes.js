@@ -4,6 +4,7 @@ const router = require('express').Router();
 router.post('/', (req, res) => {
   try {
     console.log('Email Route');
+    console.log(req.body);
     return res.status(200).json(req.body)
   } catch (err) {
     console.log(err);
