@@ -19,7 +19,7 @@ function About() {
         <p><b>Frontend Skills: HTML, CSS, Javascript, Handlebars, React.js</b></p>
         <p><b>Backend Skills: Apache, Node.js, Express, MySQL, MongoDB</b></p>
 
-        <p>My professional training began at Purdue University, graduating with a BSc in Cellular, Molecular, and Developmental Biology. I furthermore completed a MSc, at Purdue University, with a focus in Immunology & Genetics. Currently, I serve as the <a href="https://nmu.edu/chemistry/faculty-and-staff" target="_blank"> Chemistry Department Laboratory Supervisor at Northern Michigan University</a>, located in Marquette, Michigan.</p>
+        <p>My professional training began at Purdue University, graduating with a BSc in Cellular, Molecular, and Developmental Biology. I furthermore completed a MSc, at Purdue University, with a focus in Immunology & Genetics. Currently, I serve as the <a href="https://nmu.edu/chemistry/faculty-and-staff" target="_blank" rel="noopener noreferrer"> Chemistry Department Laboratory Supervisor at Northern Michigan University</a>, located in Marquette, Michigan.</p>
 
         <p>Throughout my youth and professional path I have used computers to facilitate projects, increase my efficacy, and to have fun! My computer programming experience began with making MadLibs using TI-BASIC on a TI-99/4a computer that my uncle gave me. A few years down the road, I built my first DX2 486 computer (Y2K was going to destroy the world so companies were throwing away computers) and got to experience the wonders of a GUI; DOS 6.22, Windows 3.11 and a VGA graphics card - DOOM, Duke Nukem, and Commander Keen!</p>
         
