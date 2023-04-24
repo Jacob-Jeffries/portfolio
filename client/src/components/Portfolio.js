@@ -124,3 +124,5 @@ function Portfolio() {
         </section>
     )
 };
+
+export default Portfolio;
