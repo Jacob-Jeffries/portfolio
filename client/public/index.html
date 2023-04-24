@@ -31,53 +31,15 @@
 
   <body>
     <!--This is the main header section of the page and contains the <nav> element-->
-    <div id="header"></div>
-    <div id="navbar"></div>
-
-    <!--I decided to add a nostalgic picture instead of a pic of myself - it shouldn't matter what I look like-->
-    <figure id="top-figure">
-    </figure>
+    <header id="header"></header>
+    <nav id="navbar"></nav>
     
     <!--The next section of code contains the main contents of the page, everything except the footer is in this section-->
     <main>      
-      <!--I could have deleted this and brought everything up to the main tag-->
       <section id="main-content"> 
 
-        <!--The following code build out the "About Me" Section-->
-        <section class="card" id="mc00">
-
-          <!--I used an <aside> tag to format the "heading" section for each code-block-->
-          <aside class="mc-aside" id="a-mc00">
-            <div class="middle">
-             <div class="inside">
-              <!--To get triple borders I nested the heading tag-->
-              <h2>TI BASIC READY<br>
-                > 10 PRINT "About Me"
-              </h2 alt="About me section">
-             </div>
-            </div>
-          </aside>
-
-          <section class="text" id="t-mc00">
-            <p>Hello, my name is Jacob. I've been educated and trained in various disciplines: web application development, laboratory management, and biological (wet-lab) research.</p>
-
-            <p><b>Frontend Skills: HTML, CSS, Javascript, Handlebars, React.js</p>
-            <p>Backend Skills: Apache, Node.js, Express, MySQL, MongoDB</p></b>
-
-            <p>My professional training began at Purdue University, graduating with a BSc in Cellular, Molecular, and Developmental Biology. I furthermore completed a MSc, at Purdue University, with a focus in Immunology & Genetics. Currently, I serve as the <a href="https://nmu.edu/chemistry/faculty-and-staff" target="_blank"> Chemistry Department Laboratory Supervisor at Northern Michigan University</a>, located in Marquette, Michigan.</P>
-
-            <p>Throughout my youth and professional path I have used computers to facilitate projects, increase my efficacy, and to have fun! My computer programming experience began with making MadLibs using TI-BASIC on a TI-99/4a computer that my uncle gave me. A few years down the road, I built my first DX2 486 computer (Y2K was going to destroy the world so companies were throwing away computers) and got to experience the wonders of a GUI; DOS 6.22, Windows 3.11 and a VGA graphics card - DOOM, Duke Nukem, and Commander Keen!</p>
-            
-            <p>I was first introduced to C, in middle school; finally taking programming more seriously in graduate school, I incrementally added Python, R, HTML, CSS, JavaScript, and Node.js to my repertoire.</p>
-
-            <p>This page represents a very basic, static, homepage. You can view much more complex web & CLI applications in the Portfolio section of this page.</p>
-
-            <p>To show a variety of hosting techniques different <a href="#mc01">portfolio projects</a> are hosted in various ways; including GitHub Pages, Heroku, and through an Apache reverse proxy serving up Node.js/Express pages.</p>
-
-            <p>For example <a href="/test">this</a> is a simple MVC test page running on an express server.</p>
-          </section>
+        <section id="activeTab">
         </section>
-        <!--END of ABOUT ME section-->
 
         <!--Golly, I really like my new keyboard-->
 
@@ -165,18 +127,7 @@
       <!--END of MAIN CONTENT section; again - this could have been removed-->
     </main>
 
-    <footer>
-      <h3>> 50 PRINT "Coded by Jacob Jeffries"<br>
-        > RUN<br>
-        About Me<br>
-        Portfolio<br>
-        Education & Training<br>
-        Research Publications<br>
-        Coded by Jacob Jeffries<br>
-        > <span class="blink">_</span>
-        <!--I am really happy to have found a W3 site that explained blinking - I need to do more research-->
-      </h3>
-	  </footer>
+    <footer id="footer"></footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
