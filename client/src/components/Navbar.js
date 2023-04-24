@@ -1,28 +1,35 @@
 import React from 'react';
 
-// We declare an object called styles that will contain a few objects for card and heading styles
-// Notice that each key lists CSS styles in camel case
-const styles = {
-  card: {
-    margin: 20,
-    background: '#e8eaf6',
-  },
-  heading: {
-    background: '#9a74db',
-    minHeight: 50,
-    lineHeight: 3.5,
-    fontSize: '1.2rem',
-    color: 'white',
-    padding: '0 20px',
-  },
-};
-
 // In Navbar, we can assign a style from an object by using curly braces
 function Navbar() {
   return (
-    <div style={styles.card}>
-      <div style={styles.heading}>Home</div>
-    </div>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="./assets/images/favicon.ico" alt="Navbar toggle button"/>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link" href="#mc00">About Me</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#mc01">Online Portfolio</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#mc02">Education & Training</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#mc03">Research Publications</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="https://github.com/Jacob-Jeffries" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="mailto:jeffries.info@gmail.com">Email Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 }
 
