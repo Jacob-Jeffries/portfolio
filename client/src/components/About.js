@@ -2,10 +2,10 @@ import React from 'react';
 
 function About() {
   return (
-    <section class="card" id="mc00">
-        <aside class="mc-aside" id="a-mc00">
-        <div class="middle">
-        <div class="inside">
+    <section className="card" id="mc00">
+        <aside className="mc-aside" id="a-mc00">
+        <div className="middle">
+        <div className="inside">
             <h2>TI BASIC READY<br/>
             {'>'} 10 PRINT "About Me"
             </h2>
@@ -13,7 +13,7 @@ function About() {
         </div>
         </aside>
 
-        <section class="text" id="t-mc00">
+        <section className="text" id="About_Me">
         <p>Hello, my name is Jacob. I've been educated and trained in various disciplines: web application development, laboratory management, and biological (wet-lab) research.</p>
 
         <p><b>Frontend Skills: HTML, CSS, Javascript, Handlebars, React.js</b></p>

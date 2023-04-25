@@ -81,23 +81,6 @@ a:visited{
   background-image: url("../images/favicon.ico");
 }
 
-/* The code below outlines the main <figure> tag and its elements */
-figure{
-	display:block;
-	height: 200px;
-	margin-bottom: 25px;
-	background-image: url("../images/ti-994a.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin: 20px;
-}
-
-figcaption{
-	display: none;
-}
-/*END of <figure> tag style
-
 
 /*The following code outlines the <main> tag and its elements*/
 main{
@@ -156,6 +139,7 @@ main{
 	line-height: 1.5;
 	word-spacing: 0.2em;
 	background-color: black;
+	width: 100%;
 }
 
 /*This is the About Me section*/
@@ -164,7 +148,7 @@ main{
 	background-color: black;
 }
 
-/*This is the Portfolio aside section*/
+/*This is the Portfolio section*/
 #mc01{
 	display: flex;
 	background-color: black;
