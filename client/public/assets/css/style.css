@@ -93,15 +93,18 @@ main{
 	justify-content: space-around;
 	padding: 10px;
 	background-color: black;
+	width: 100%;
 }
 
 .card{
 	flex-direction: column;
 	margin: 10px 0px;
+	min-width: 100%;
 }
 
 .mc-aside {
 	min-width: 300px;
+	width: 100%;
 	border-bottom: var(--aside-border);
 	border-left: var(--aside-border);
 	border-radius: 25px;
@@ -170,10 +173,8 @@ main{
 }
 
 .carousel-item > img{
-	max-height: 300px;
-	min-height: 290px;
-	max-width: 300px;
-	min-width: 290px;
+	width: 100%;
+	height: 100%;
 	object-fit: contain;
 	object-position: center;
 	margin: auto;
@@ -203,15 +204,11 @@ main{
 	list-style-type: none;
 }
 
-/*This is the Contact Me section*/
+/*This is the Research section*/
 #mc03{
 	display: flex;
 	justify-content: center;
 	background-color: black;
-}
-
-#mc03 fieldset{
-	border: none;
 }
 /*END of <main> tag style*/
 
@@ -253,16 +250,9 @@ footer{
 	/*The portfolio elements are switched from a colum orientation to a wrapped row orientation*/ 
 	#carouselExampleIndicators{
 		display: flex;
-		height: 400px;
-		width: 400px;
+		height: 500px;
+		width: 500px;
 		padding: 10px;
-	}
-	
-	.carousel-item > img{
-		height: 400px;
-		width: 400px;
-		object-fit: scale-down;
-		object-position: center;
 	}
 
 	/*When the screen allows, I;ve given the footer a margin*/
@@ -277,18 +267,6 @@ footer{
 		display: flex;
 		justify-content: start;
 		padding: 10px;
-	}
-	
-	/*With a larger screen I've increased the size of my main figure*/
-	figure{
-		display:block;
-		height: 400px;
-		margin-bottom: 25px;
-		background-image: url("../images/ti-994a.png");
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-		margin: 20px;
 	}
 	
 	/*Once the screen is large enough the section header elements move to the left side*/
@@ -339,19 +317,11 @@ footer{
 		border-radius: 25px;
 		box-shadow: inset 0px 0px 8px yellow, 0px 0px 10px rebeccapurple;
 	}
-
 	#carouselExampleIndicators{
 		display: flex;
-		height: 500px;
-		width: 500px;
+		height: 600px;
+		width: 750px;
 		padding: 10px;
-	}
-	
-	.carousel-item > img{
-		height: 500px;
-		width: 500px;
-		object-fit: scale-down;
-		object-position: center;
 	}
 }
 
@@ -369,15 +339,8 @@ footer{
 	#carouselExampleIndicators{
 		display: flex;
 		height: 800px;
-		width: 800px;
+		width: 1000px;
 		padding: 10px;
-	}
-	
-	.carousel-item > img{
-		height: 800px;
-		width: 800px;
-		object-fit: scale-down;
-		object-position: center;
 	}
 	
 }
