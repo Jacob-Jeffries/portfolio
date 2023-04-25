@@ -2,16 +2,16 @@ import React from 'react';
 
 function Research() {
     return (
-        <section class="card" id="mc03">
-          <aside class="mc-aside" id="a-mc03">
-            <div class="middle">
-              <div class="inside">
+        <section className="card" id="mc03">
+          <aside className="mc-aside" id="a-mc03">
+            <div className="middle">
+              <div className="inside">
                 <h2>{'>'} 40 PRINT "Research Publications"</h2>
               </div>
             </div>
           </aside>
 
-          <section class="text" id="t-mc03">
+          <section className="text" id="t-mc03">
             <h3>Published Research</h3>
             <ul>
               <li><a href="https://pubmed.ncbi.nlm.nih.gov/32788232/" target="_blank" rel="noopener noreferrer">2020: Mitofusin 2 regulates neutrophil adhesive migration and the actin cytoskeleton</a></li>

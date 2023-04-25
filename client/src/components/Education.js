@@ -11,7 +11,7 @@ function Education() {
                 </div>    
             </aside>
 
-            <section className="text" id="t-mc02">
+            <section className="text" id="Education">
                 <ul>
                     <li>Full Stack Web Dev Boot Camp - MSU - Expected Completion May 2023</li>
                     <li>24 Hour Laboratory Safety Training - LSI - July 2022</li>

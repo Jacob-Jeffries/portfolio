@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import Navbar from './components/Navbar.js';
 import About from './components/About.js';
 import Portfolio from './components/Portfolio.js';
 import Education from './components/Education.js';
 import Research from './components/Research.js';
-import Navbar from './components/Navbar.js';
+import Contact from './components/Contact.js';
+
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
     componentToRender = <Education />;
   } else if (activeTab === 'Research') {
     componentToRender = <Research />;
+  } else if (activeTab === 'Contact'){
+    componentToRender = <Contact />;
   }
 
   return (
