@@ -18,6 +18,9 @@ function Navbar(props) {
         <li className={activeTab === 'Research' ? 'active' : ''} onClick={() => handleClick('Research')}>
           Research
         </li>
+        <li className={activeTab === 'Contact' ? 'active' : ''} onClick={() => handleClick('Contact')}>
+          Contact Me
+        </li>
       </ul>
     </nav>
   );
