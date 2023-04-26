@@ -4,7 +4,9 @@
 This is a dynamic page generated using HTML, CSS, JavaScript, and ReactJS. Unlike the earlier portfolio page I created, this one renders different content on the page without reloading and has a Reactjs form with email validation. 
 
 ## Installation
-This is a delpoyed site and does not require installation.
+This is a delpoyed site and does not require installation. You can visit the site on GitHub Pages:
+
+https://jacob-jeffries.github.io/portfolio/
 
 ## Usage
 This is a simple ReactJS web application with a few navigation links at the top, click each link to load the relevent content on the page. 
