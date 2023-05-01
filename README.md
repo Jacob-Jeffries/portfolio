@@ -23,6 +23,9 @@ This is a simple ReactJS web application with a few navigation links at the top,
 ## Credits 
 This Web Application was coded by Jacob Jeffries. 
 
+Built to GitHub Pages using instruction found here: 
+https://github.com/gitname/react-gh-pages
+
 Client:
 *   React 17.0.2
 *   React-Dom 17.0.2
